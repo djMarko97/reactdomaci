@@ -1,0 +1,28 @@
+.container{
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url(https://www.northstarmeetingsgroup.com/uploadedImages/Articles/How_To/Event_Planning/Contracts_and_Legal_Issues/GettyImages-941906652.jpg?width=920&scale=both&mode=crop);
+    background-size: cover;
+    align-items: center;
+}
+.form-control{
+    padding: 10px;
+    background-color: white;
+    border: 1px solid aqua;
+}
+
+.mx-auto{
+    margin: 10px 0;
+}
+
+.btn-info{
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: teal;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
