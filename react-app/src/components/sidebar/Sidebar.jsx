@@ -1,4 +1,5 @@
 import "./sidebar.css"
+import { Link } from "react-router-dom"
 
 export default function Sidebar() {
     return (
@@ -15,19 +16,19 @@ export default function Sidebar() {
             <div className="sidebarItem">
                 <span className="sidebarTitle">CATEGORIES</span>
                 <ul className="sidebarList">
-                    <li className="sidebarListItem">Competitions</li>
-                    <li className="sidebarListItem">Teams</li>
-                    <li className="sidebarListItem">Players</li>
-                    <li className="sidebarListItem">Stadiums</li>
-                    <li className="sidebarListItem">History</li>
+                    <li className="sidebarListItem"><Link to="/" className="link">Home</Link></li>
+                    <li className="sidebarListItem"><Link to="/write" className="link">Write</Link></li>
+                    <li className="sidebarListItem"><Link to="/contact" className="link">Contact</Link></li>
+                    <li className="sidebarListItem"><Link to="/settings" className="link">Settings</Link></li>
+                    
                 </ul>
             </div>
             <div className="sidebarItem">
                 <span className="sidebarTitle">FOLLOW PREMIER LEAGUE</span>
                 <div className="sidebarSocial">
-                    <i className="sidebarIcon fab fa-facebook-square"></i>
-                    <i className="sidebarIcon fab fa-twitter-square"></i>
-                    <i className="sidebarIcon fab fa-instagram-square"></i>
+                    <a href="https://wwww.facebook.com"><i className="topIcon fab fa-facebook-square"></i></a>
+                    <a href="https://www.twitter.com"> <i className="topIcon fab fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com"> <i className="topIcon fab fa-instagram-square"></i></a>
                 </div>
             </div>
         </div>

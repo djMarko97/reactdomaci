@@ -6,6 +6,8 @@ import Register from "./pages/home/register/Register";
 import Home from "./pages/home/Home";
 import Single from "./pages/home/single/Single";
 import Contact from "./pages/home/contact/Contact";
+import Single1 from "./pages/home/single1/Single1"
+import Single2 from "./pages/home/single2/Single2";
 
 import {
   BrowserRouter as Router,
@@ -16,7 +18,7 @@ import {
 
 
 function App() {
-  const user = false;
+  const user = true;
   return (
     <Router>
       <TopBar />
@@ -31,6 +33,12 @@ function App() {
         <Route path="/settings">{user ? <Settings /> : <Register/>}</Route>
         <Route path="/post/:postId">
           <Single />
+        </Route>
+        <Route path="/post1/:postId">
+          <Single1 />
+        </Route>
+        <Route path="/post2/:postId">
+          <Single2 />
         </Route>
       </Switch>
     
